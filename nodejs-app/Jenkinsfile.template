@@ -24,7 +24,7 @@ pipeline {
         }
       }  
     }
-     stage('Build and Push Image') {
+    stage('Build and Push Image') {
         agent any
         when {
           beforeAgent true
@@ -35,7 +35,7 @@ pipeline {
           unstash 'app'
         }
       }
-     stage('Deploy') {
+    stage('Deploy') {
         when {
           beforeAgent true
           branch 'master'
