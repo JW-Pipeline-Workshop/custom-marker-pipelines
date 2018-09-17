@@ -31,7 +31,7 @@ options {
       }  
       input {
         message "Should we deploy?"
-        submitter "jhendricks1"
+        submitter "jhendrick1"
         submitterParameter "APPROVER"
       }
       steps {
