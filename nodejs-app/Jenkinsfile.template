@@ -16,7 +16,6 @@ pipeline {
           yaml testPodYaml
         }
       }
-    }
         stage('Browser Tests') {
           steps {
             script {
