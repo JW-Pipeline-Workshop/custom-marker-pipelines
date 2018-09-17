@@ -11,12 +11,12 @@ pipeline {
   stages {
     stage('Test') {
       agent {
-       agent {
         kubernetes {
           label 'nodejs-app-inline'
           yaml testPodYaml
         }
       }
+    }
         stage('Browser Tests') {
           steps {
             script {
