@@ -35,11 +35,10 @@ pipeline {
         branch 'master'
       }
       options {
-        timeout(time: 60, unit: 'SECONDS')
-      }  
+        timeout(time: 60, unit: 'SECONDS') 
+      }
       input {
         message "Should we deploy?"
-        submitter "jhendrick1"
         submitterParameter "APPROVER"
       }
       steps {
