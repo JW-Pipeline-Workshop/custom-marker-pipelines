@@ -1,12 +1,12 @@
 pipeline {
    agent { label 'nodejs-app' } 
-options { 
+   options { 
     buildDiscarder(logRotator(numToKeepStr: '2'))
-  }
-post {
+   }
+   post {
     aborted {
       echo "Why didn't you push my button?"
-  }    
+   }    
   stages {
     stage('Test') {
         steps {
